@@ -10,5 +10,6 @@ module.exports = (router, controller) => {
     router.post('/addUser', controller.addUser);
     router.get('/hello', controller.hello);
     router.get('/js', controller.js);
+    router.get('/error', controller.error);
 }   
 
