@@ -4,6 +4,12 @@ const _ = require('underscore');
 const { connectToDatabase, disconnectFromDatabase, startIdleTimer } =require(`${__config}/dbConn`)
 const { responseHandler } = require(`${__utils}/responseHandler`)
 
+exports.hello = async (req, res) => {
+    res.json({
+        msg: "Hello Node Deployment Automatically"
+    })
+}
+
 exports.addUser = async (req, res) => {
     try {
         await connectToDatabase();

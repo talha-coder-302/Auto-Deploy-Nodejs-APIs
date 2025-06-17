@@ -8,5 +8,6 @@ module.exports = (router, controller) => {
     // router.use(passport.session());
 
     router.post('/addUser', controller.addUser);
+    router.get('/hello', controller.hello);
 }   
 
