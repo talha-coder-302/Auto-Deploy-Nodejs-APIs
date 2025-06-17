@@ -15,6 +15,11 @@ exports.js = async (req, res) => {
         msg: "JavaScript is gthe most loved language in the world"
     })
 }
+exports.error = async (req, res) => {
+    res.json({
+        msg: "Error Route"
+    })
+}
 
 exports.addUser = async (req, res) => {
     try {
