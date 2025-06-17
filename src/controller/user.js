@@ -10,6 +10,12 @@ exports.hello = async (req, res) => {
     })
 }
 
+exports.js = async (req, res) => {
+    res.json({
+        msg: "JavaScript is gthe most loved language in the world"
+    })
+}
+
 exports.addUser = async (req, res) => {
     try {
         await connectToDatabase();
